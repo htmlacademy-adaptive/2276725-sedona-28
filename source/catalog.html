@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Фото и Видео</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo">
-        <img class="main-header__logo-image" src="../source/img/header-logo.svg" width="185" height="96" alt="Логотип сайта о Седоне.">
+        <img class="main-header__logo-image" src="img/header-logo.svg" width="185" height="96" alt="Логотип сайта о Седоне.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toogle" type="button">
@@ -15,17 +16,17 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
+            <li class="site-list__item link">
+              <a class="link__item" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item site-list__item--current">
-              <a>Фото и видео</a>
+            <li class="site-list__item site-list__item--current link">
+              <a class="link__item">Фото и видео</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
+            <li class="site-list__item link">
+              <a class="link__item" href="form.html">Форма отзыва</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">Html academy</a>
+            <li class="site-list__item link">
+              <a class="link__item" href="#">Html academy</a>
             </li>
           </ul>
         </div>
@@ -33,8 +34,8 @@
     </header>
     <main class="main-inner">
       <div class="main-inner__promo inner-promo">
-        <img class="inner-promo__image" src="../source/img/promo-background-mobile-catalog.jpg" alt="Вид на горы.">
-        <img class="inner-promo__welcome" src="../source/img/welcome-mobile-catalog.svg" alt="Sedona.">
+        <img class="inner-promo__image" src="img/promo-background-mobile-catalog.jpg" alt="Вид на горы.">
+        <img class="inner-promo__welcome" src="img/welcome-mobile-catalog.svg" alt="Sedona.">
       </div>
       <header class="catalog-header">
         <h1 class="catalog-header__title">Фото и видео</h1>
@@ -44,40 +45,48 @@
         <h2 class="visually-hidden">Лента фотографий</h2>
         <ul class="photo__list snapshot">
           <li class="snapshot__item publication">
-            <img class="publication__content" src="../source/img/content-photo-1-mobile.jpg" width="280" height="280" alt="Дорога, уходящая вдаль.">
+            <img class="publication__content" src="img/content-photo-1-mobile.jpg" width="280" height="280" alt="Дорога, уходящая вдаль.">
             <h3 class="publication__discription">Неродные просторы</h3>
             <p class="publication__author">Автор фото: Борис</p>
-            <button class="button publication-button__favorite" type="button">
-              <img class="publication-button__favorite-image" src="../source/img/like-icon.svg" alt="Поставить лайк публикации">
-            </button>
-            <p class="publication__num-favorites">1350</p>
+            <div class="publication__favorite">
+              <button class="button publication-button__favorite" type="button">
+                <img class="publication-button__favorite-image" src="img/like-icon.svg" alt="Поставить лайк публикации">
+              </button>
+              <p class="publication__num-favorites">1350</p>
+            </div>
           </li>
           <li class="snapshot__item publication">
-            <img class="publication__content" src="../source/img/content-photo-2-mobile.jpg" width="280" height="280" alt="Местное растение.">
+            <img class="publication__content" src="img/content-photo-2-mobile.jpg" width="280" height="280" alt="Местное растение.">
             <h3 class="publication__discription">Местная растительность</h3>
             <p class="publication__author">Автор фото: Сергей</p>
-            <button class="button publication-button__favorite" type="button">
-              <img class="publication-button__favorite-image" src="../source/img/like-icon.svg" alt="Поставить лайк публикации">
-            </button>
-            <p class="publication__num-favorites">143</p>
+            <div class="publication__favorite">
+              <button class="button publication-button__favorite" type="button">
+                <img class="publication-button__favorite-image" src="img/like-icon.svg" alt="Поставить лайк публикации">
+              </button>
+              <p class="publication__num-favorites">143</p>
+            </div>
           </li>
           <li class="snapshot__item publication">
-            <img class="publication__content" src="../source/img/content-photo-3-mobile.jpg" width="280" height="280" alt="Серпантин.">
+            <img class="publication__content" src="img/content-photo-3-mobile.jpg" width="280" height="280" alt="Серпантин.">
             <h3 class="publication__discription">Дорога на север</h3>
             <p class="publication__author">Автор фото: Петр</p>
-            <button class="button publication-button__favorite" type="button">
-              <img class="publication-button__favorite-image" src="../source/img/like-icon.svg" alt="Поставить лайк публикации">
-            </button>
-            <p class="publication__num-favorites">96</p>
+            <div class="publication__favorite">
+              <button class="button publication-button__favorite" type="button">
+                <img class="publication-button__favorite-image" src="img/like-icon.svg" alt="Поставить лайк публикации">
+              </button>
+              <p class="publication__num-favorites">96</p>
+            </div>
           </li>
           <li class="snapshot__item publication">
-            <img class="publication__content" src="../source/img/content-photo-4-mobile.jpg" width="280" height="280" alt="Вид на мост дьявола.">
+            <img class="publication__content" src="img/content-photo-4-mobile.jpg" width="280" height="280" alt="Вид на мост дьявола.">
             <h3 class="publication__discription">Мост дьявола</h3>
             <p class="publication__author">Автор фото: Антон</p>
-            <button class="button publication-button__favorite" type="button">
-              <img class="publication-button__favorite-image" src="../source/img/like-icon.svg" alt="Поставить лайк публикации">
-            </button>
-            <p class="publication__num-favorites">254</p>
+            <div class="publication__favorite">
+              <button class="button publication-button__favorite" type="button">
+                <img class="publication-button__favorite-image" src="img/like-icon.svg" alt="Поставить лайк публикации">
+              </button>
+              <p class="publication__num-favorites">254</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -85,7 +94,7 @@
         <h2 class="visually-hidden">Видео из Седоны</h2>
         <h2 class="video__promo">Все еще сомневаетесь?</h2>
         <p class="video__advertising">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <img class="video__content" src="../source/img/video-mobile.jpg" width="280" height="177" alt="Видео Седоны.">
+        <img class="video__content" src="img/video-mobile.jpg" width="280" height="177" alt="Видео Седоны.">
       </section>
     </main>
     <footer class="main-footer">
@@ -95,19 +104,19 @@
         </div>
         <div class="main-footer__social social">
           <a class="social__vkontakte" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Вконтакте</span>
+            <span class="visually">Вконтакте</span>
           </a>
           <a class="social__telegram" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм</span>
+            <span class="visually">Телеграм</span>
           </a>
           <a class="social__youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">YouTube</span>
+            <span class="visually">YouTube</span>
           </a>
         </div>
         <div class="main-footer__copyyright copyyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__image" src="../source/img/html_academy-logo.jpg" alt="Логотип HTML Академии">
+            <img class="copyright__image" src="img/html_academy-logo.jpg" alt="Логотип HTML Академии">
           </a>
         </div>
       </div>

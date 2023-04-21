@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Оставьте свой отзыв</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo">
-        <img class="main-header__logo-image" src="../source/img/header-logo.svg" width="185" height="96" alt="Логотип сайта о Седоне.">
+        <img class="main-header__logo-image" src="img/header-logo.svg" width="185" height="96" alt="Логотип сайта о Седоне.">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toogle" type="button">
@@ -15,17 +16,17 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
+            <li class="site-list__item link">
+              <a class="link__item" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Фото и видео</a>
+            <li class="site-list__item link">
+              <a class="link__item" href="catalog.html">Фото и видео</a>
             </li>
-            <li class="site-list__item site-list__item--current">
-              <a>Форма отзыва</a>
+            <li class="site-list__item site-list__item--current link">
+              <a class="link__item">Форма отзыва</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">Html academy</a>
+            <li class="site-list__item link">
+              <a class="link__item" href="#">Html academy</a>
             </li>
           </ul>
         </div>
@@ -33,11 +34,11 @@
     </header>
     <main class="main-inner">
       <div class="main-inner__promo inner-promo">
-        <img class="inner-promo__image" src="../source/img/promo-background-mobile-catalog.jpg" alt="Вид на горы.">
-        <img class="inner-promo__welcome" src="../source/img/welcome-mobile-catalog.svg" alt="Sedona.">
+        <img class="inner-promo__image" src="img/promo-background-mobile-catalog.jpg" alt="Вид на горы.">
+        <img class="inner-promo__welcome" src="img/welcome-mobile-catalog.svg" alt="Sedona.">
       </div>
       <header class="form-header">
-        <h1 class="form-header__title">Оставьте отзыв</h1>
+        <h1 class="form-header__title">Оставьте свой отзыв</h1>
         <p class="form-header__announcement">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </header>
       <section class="person-form">
@@ -55,35 +56,39 @@
             <span class="form-field__label">Отчество:</span>
             <input class="form-field__control input" type="text" name="person-surname" id="person-surname" placeholder="Отчество" value="Викторович">
           </label>
-          <legend class="person-form__title">Контактная информация:</legend>
-          <label class="person-info__field form-field">
-            <span class="form-field__label">Контактный телефон*:</span>
-            <input class="form-field__control input" type="number" name="person-telephone" id="person-telephone" placeholder="Введите телефон" required>
-            <img class="phone-icon" src="../source/img/phone-icon.jpg" width="58" height="58" alt="Иконка телефона.">
-          </label>
-          <label class="person-info__field form-field">
-            <span class="form-field__label">Электронная почта*:</span>
-            <input class="form-field__control input" type="email" name="person-email" id="person-email" placeholder="Введите e-mail" required>
-            <img class="phone-icon" src="../source/img/email-icon.jpg" width="58" height="58" alt="Иконка телефона.">
-          </label>
-          <legend class="person-form__title review">Ваше общее впечатление:</legend>
-          <ul class="review__list">
-            <label class="control">
-              <input class="visually-hidden control-input" type="radio" name="review-item" value="positive" checked>
-              <span class="control__mark"></span>
-              <span class="control__label">Скорее положительное</span>
+          <div class="person-form__contacts">
+            <legend class="person-form__title">Контактная информация:</legend>
+            <label class="person-info__field form-field">
+              <span class="form-field__label">Контактный телефон*:</span>
+              <input class="form-field__control input" type="number" name="person-telephone" id="person-telephone" placeholder="Введите телефон" required>
+              <img class="phone-icon" src="../source/img/phone-icon.jpg" width="58" height="58" alt="Иконка телефона.">
             </label>
-            <label class="control">
-              <input class="visually-hidden control-input" type="radio" name="review-item" value="negative">
-              <span class="control__mark"></span>
-              <span class="control__label">Скорее отрицательное</span>
+            <label class="person-info__field form-field">
+              <span class="form-field__label">Электронная почта*:</span>
+              <input class="form-field__control input" type="email" name="person-email" id="person-email" placeholder="Введите e-mail" required>
+              <img class="phone-icon" src="../source/img/email-icon.jpg" width="58" height="58" alt="Иконка телефона.">
             </label>
-            <label class="control">
-              <input class="visually-hidden control-input" type="radio" name="review-item" value="not-shure">
-              <span class="control__mark"></span>
-              <span class="control__label">Затрудняюсь ответить</span>
-            </label>
-          </ul>
+          </div>
+          <div class="person-form__review">
+            <legend class="person-form__title review">Ваше общее впечатление:</legend>
+            <ul class="review__list">
+              <label class="control">
+                <input class="visually-hidden control-input" type="radio" name="review-item" value="positive" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Скорее положительное</span>
+              </label>
+              <label class="control">
+                <input class="visually-hidden control-input" type="radio" name="review-item" value="negative">
+                <span class="control__mark"></span>
+                <span class="control__label">Скорее отрицательное</span>
+              </label>
+              <label class="control">
+                <input class="visually-hidden control-input" type="radio" name="review-item" value="not-shure">
+                <span class="control__mark"></span>
+                <span class="control__label">Затрудняюсь ответить</span>
+              </label>
+            </ul>
+          </div>
           <legend class="person-form__title visited">Посещенные достопримечательности:</legend>
           <ul class="visited__list">
             <label class="control">
@@ -107,9 +112,11 @@
               <span class="control__label">Красные скалы</span>
             </label>
           </ul>
-          <legend class="person-form__title description">Опишите свои эмоции:</legend>
-          <input class="description__text" type="text" placeholder="Опишите подробно все свои восторги">
-          <button class="button person-form__button-submit" type="submit">Отправить отзыв</button>
+          <div class="person-form__description">
+            <legend class="person-form__title description">Опишите свои эмоции:</legend>
+            <input class="description__text" type="text" placeholder="Опишите подробно все свои восторги">
+            <button class="button person-form__button-submit" type="submit">Отправить отзыв</button>
+          </div>
         </form>
       </section>
     </main>
@@ -120,19 +127,19 @@
         </div>
         <div class="main-footer__social social">
           <a class="social__vkontakte" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Вконтакте</span>
+            <span class="visually">Вконтакте</span>
           </a>
           <a class="social__telegram" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграм</span>
+            <span class="visually">Телеграм</span>
           </a>
           <a class="social__youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">YouTube</span>
+            <span class="visually">YouTube</span>
           </a>
         </div>
         <div class="main-footer__copyyright copyyright">
           <p class="copyright__text">Разработано</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__image" src="../source/img/html_academy-logo.jpg" alt="Логотип HTML Академии">
+            <img class="copyright__image" src="img/html_academy-logo.jpg" alt="Логотип HTML Академии">
           </a>
         </div>
       </div>
@@ -143,7 +150,7 @@
         <p class="modal__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="button modal__button" type="button">ок</button>
       </div>
-      <div class="modal modal__sended">
+      <div class="modal__sended">
         <h2 class="modal__title">Ваш отзыв отправлен!</h2>
         <p class="modal__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
         <button class="button modal__button" type="button">Закрыть окно</button>
