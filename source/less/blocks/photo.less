@@ -8,6 +8,15 @@
   flex-direction: column;
   margin: 0;
   padding: 0 20px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0;
+  }
 }
 
 .publication__discription {
@@ -19,6 +28,11 @@
   margin: 0;
   padding: 0;
   text-align: start;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .publication__author {
