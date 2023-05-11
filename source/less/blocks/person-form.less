@@ -14,6 +14,15 @@
   .person-form__contacts {
     padding: 0;
   }
+
+  @media (min-width: 1200px) {
+    padding: 68px 120px 64px;
+
+    .person-info-form {
+      grid-template-columns: 430px 430px;
+      grid-column-gap: 128px;
+    }
+  }
 }
 
 .person-form__title {
@@ -62,6 +71,13 @@
     grid-template-rows: 46px 46px;
     grid-row-gap: 16px;
   }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 64px;
+    grid-template-rows: 1fr;
+    padding: 0;
+  }
 }
 
 .review__list {
@@ -75,6 +91,12 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
   }
 }
 
@@ -99,6 +121,9 @@
   line-height: 26px;
   color: #000000;
   margin: 0 0 16px 0;
+  padding: 16px;
+  width: 430px;
+  box-sizing: border-box;
 }
 
 .input {
@@ -114,6 +139,11 @@
 
 .control {
   margin: 0 0 36px 0;
+
+  @media (min-width: 1200px) {
+    margin: 0;
+    padding: 31px 0;
+  }
 }
 
 .description__text {
