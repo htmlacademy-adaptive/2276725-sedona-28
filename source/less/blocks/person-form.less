@@ -70,6 +70,7 @@
     grid-column-gap: 32px;
     grid-template-rows: 46px 46px;
     grid-row-gap: 16px;
+    justify-items: center;
   }
 
   @media (min-width: 1200px) {
@@ -91,12 +92,11 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0;
   }
 
   @media (min-width: 1200px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0;
+    flex-wrap: nowrap;
   }
 }
 
@@ -124,6 +124,10 @@
   padding: 16px;
   width: 430px;
   box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    width: 280px;
+  }
 }
 
 .input {
@@ -137,8 +141,27 @@
   color: #000000;
 }
 
+.review__control {
+  margin: 0 0 36px 0;
+
+  @media (min-width: 768px) {
+    width: 50%;
+    margin: 0 0 36px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+    padding: 31px 0;
+  }
+}
+
 .control {
   margin: 0 0 36px 0;
+
+  @media (min-width: 768px) {
+    // width: 50%;
+    margin: 0;
+  }
 
   @media (min-width: 1200px) {
     margin: 0;
