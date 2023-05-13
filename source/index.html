@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -14,22 +15,20 @@
         <button class="main-nav__toogle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--current link">
-              <a class="link__item">Главная</a>
-            </li>
-            <li class="site-list__item link">
-              <a class="link__item" href="catalog.html">Фото и видео</a>
-            </li>
-            <li class="site-list__item link">
-              <a class="link__item" href="form.html">Форма отзыва</a>
-            </li>
-            <li class="site-list__item link">
-              <a class="link__item" href="https://htmlacademy.ru/">Html academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current link">
+            <a class="link__item">Главная</a>
+          </li>
+          <li class="site-list__item link">
+            <a class="link__item" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item link">
+            <a class="link__item" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item link">
+            <a class="link__item" href="https://htmlacademy.ru/">Html academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="main-container">
@@ -41,39 +40,39 @@
       <section class="announcement">
         <h2 class="visually-hidden">Седона и ее преимущества</h2>
         <div class="announcement-wrapper">
-          <h3 class="announcement-wrapper__title">Седона — небольшой<br>городок в Аризоне, заслуживающий большего!</h3>
+          <h3 class="announcement-wrapper__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
           <p class="announcement-wrapper__discription">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
         <ol class="advantages-list">
-          <li class="advantages-list__item">
-            <div class="product-container">
+          <li class="advantages-list__item advantages-list__item--first">
+            <div class="advantages-list__product-container product-container">
               <h3 class="product-container__title">Настоящий городок</h3>
               <p class="product-container__number">-№1-</p>
-              <p class="product-container__discription">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <p class="product-container__discription">Седона не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="product-image" src="img/photo-1-mobile.jpg" width="320" height="260" alt="Изображение дома.">
+            <img class="advantages-list__product-image product-image" src="img/photo-1-mobile.jpg" width="320" height="260" alt="Изображение дома.">
+            <ul class="advantages-list__recomendation recomendation-list">
+              <li class="recomendation-list__item recomendation-list__item--house">
+                <h3 class="recomendation-list__title">Жильё</h3>
+                <p class="recomendation-list__discription">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="recomendation-list__item recomendation-list__item--food">
+                <h3 class="recomendation-list__title">Еда</h3>
+                <p class="recomendation-list__discription">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="recomendation-list__item recomendation-list__item--gift">
+                <h3 class="recomendation-list__title">Сувениры</h3>
+                <p class="recomendation-list__discription">Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
           </li>
-          <ul class="recomendation-list">
-            <li class="recomendation-list__item recomendation-list__item--house">
-              <h3 class="recomendation-list__title">Жильё</h3>
-              <p class="recomendation-list__discription">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </li>
-            <li class="recomendation-list__item recomendation-list__item--food">
-              <h3 class="recomendation-list__title">Еда</h3>
-              <p class="recomendation-list__discription">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li class="recomendation-list__item recomendation-list__item--gift">
-              <h3 class="recomendation-list__title">Сувениры</h3>
-              <p class="recomendation-list__discription">Не только китайского, но и местного производства!</p>
-            </li>
-          </ul>
-          <li class="advantages-list__item">
-            <div class="product-container">
+          <li class="advantages-list__item advantages-list__item--second">
+            <div class="advantages-list__product-container product-container">
               <h3 class="product-container__title">Там есть мост дьявола</h3>
               <p class="product-container__number">-№2-</p>
               <p class="product-container__discription">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="product-image" src="img/photo-2-mobile.jpg" width="320" height="260" alt="Вид на мост дьявола.">
+            <img class="advantages-list__product-image product-image" src="img/photo-2-mobile.jpg" width="320" height="260" alt="Вид на мост дьявола.">
           </li>
           <li class="advantages-list__item list-item">
             <h3 class="list-item__title">Небольшая площадь</h3>
@@ -96,7 +95,7 @@
         <h2 class="visually-hidden">Бронирование гостиницы</h2>
         <div class="booking__wrapper reservation">
           <h3 class="reservation__title">Заинтересовались?</h3>
-          <p class="reservation__discription">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p class="reservation__discription">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="button booking__button-submit">Найти гостиницу</button>
         </div>
       </section>

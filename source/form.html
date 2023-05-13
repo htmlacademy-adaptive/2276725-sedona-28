@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Оставьте свой отзыв</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -42,54 +43,59 @@
         <p class="form-header__announcement">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </header>
       <section class="person-form">
-        <legend class="person-form__title">Представьтесь:</legend>
-        <form class="person-info-form person-info" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="person-info__field form-field">
-            <span class="form-field__label">Имя*:</span>
-            <input class="form-field__control input" type="text" name="person-name" id="person-name" placeholder="Имя" value="Пётр" required>
-          </label>
-          <label class="person-info__field form-field">
-            <span class="form-field__label">Фамилия*:</span>
-            <input class="form-field__control input" type="text" name="person-last-name" id="person-last-name" placeholder="Фамилия" value="Пустота" required>
-          </label>
-          <label class="person-info__field form-field">
-            <span class="form-field__label">Отчество:</span>
-            <input class="form-field__control input" type="text" name="person-surname" id="person-surname" placeholder="Отчество" value="Викторович">
-          </label>
-          <div class="person-form__contacts">
-            <legend class="person-form__title">Контактная информация:</legend>
-            <label class="person-info__field form-field">
-              <span class="form-field__label">Контактный телефон*:</span>
-              <input class="form-field__control input" type="number" name="person-telephone" id="person-telephone" placeholder="Введите телефон" required>
-              <img class="phone-icon" src="../source/img/phone-icon.jpg" width="58" height="58" alt="Иконка телефона.">
-            </label>
-            <label class="person-info__field form-field">
-              <span class="form-field__label">Электронная почта*:</span>
-              <input class="form-field__control input" type="email" name="person-email" id="person-email" placeholder="Введите e-mail" required>
-              <img class="phone-icon" src="../source/img/email-icon.jpg" width="58" height="58" alt="Иконка телефона.">
-            </label>
-          </div>
+        <h2 class="visually-hidden">Информация о пользователе</h2>
+        <section class="person-form__intro person">
+          <form class="person-info-form person-info" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="person__name">
+              <legend class="person-form__title">Представьтесь:</legend>
+              <label class="person-info__field form-field">
+                <span class="form-field__label">Имя*:</span>
+                <input class="form-field__control input" type="text" name="person-name" id="person-name" placeholder="Имя" value="Пётр" required>
+              </label>
+              <label class="person-info__field form-field">
+                <span class="form-field__label">Фамилия*:</span>
+                <input class="form-field__control input" type="text" name="person-last-name" id="person-last-name" placeholder="Фамилия" value="Пустота" required>
+              </label>
+              <label class="person-info__field form-field">
+                <span class="form-field__label">Отчество:</span>
+                <input class="form-field__control input" type="text" name="person-surname" id="person-surname" placeholder="Отчество" value="Викторович">
+              </label>
+            </div>
+            <div class="person-form__contacts">
+              <legend class="person-form__title">Контактная информация:</legend>
+              <label class="person-info__field form-field">
+                <span class="form-field__label">Контактный телефон*:</span>
+                <input class="form-field__control input" type="number" name="person-telephone" id="person-telephone" placeholder="Введите телефон" required>
+                <img class="phone-icon" src="../source/img/phone-icon.jpg" width="58" height="58" alt="Иконка телефона.">
+              </label>
+              <label class="person-info__field form-field">
+                <span class="form-field__label">Электронная почта*:</span>
+                <input class="form-field__control input" type="email" name="person-email" id="person-email" placeholder="Введите e-mail" required>
+                <img class="phone-icon" src="../source/img/email-icon.jpg" width="58" height="58" alt="Иконка телефона.">
+              </label>
+            </div>
+        </section>
           <div class="person-form__review">
             <legend class="person-form__title review">Ваше общее впечатление:</legend>
             <ul class="review__list">
-              <label class="control">
+              <label class="review__control">
                 <input class="visually-hidden control-input" type="radio" name="review-item" value="positive" checked>
                 <span class="control__mark"></span>
                 <span class="control__label">Скорее положительное</span>
               </label>
-              <label class="control">
+              <label class="review__control">
                 <input class="visually-hidden control-input" type="radio" name="review-item" value="negative">
                 <span class="control__mark"></span>
                 <span class="control__label">Скорее отрицательное</span>
               </label>
-              <label class="control">
+              <label class="review__control">
                 <input class="visually-hidden control-input" type="radio" name="review-item" value="not-shure">
                 <span class="control__mark"></span>
                 <span class="control__label">Затрудняюсь ответить</span>
               </label>
             </ul>
           </div>
-          <legend class="person-form__title visited">Посещенные достопримечательности:</legend>
+          <legend class="person-form__title person-form__visited visited">Посещенные достопримечательности:</legend>
           <ul class="visited__list">
             <label class="control">
               <input class="visually-hidden control-input" type="checkbox" name="visited-item" value="Мост дьявола" checked>
@@ -115,7 +121,10 @@
           <div class="person-form__description">
             <legend class="person-form__title description">Опишите свои эмоции:</legend>
             <input class="description__text" type="text" placeholder="Опишите подробно все свои восторги">
-            <button class="button person-form__button-submit" type="submit">Отправить отзыв</button>
+            <div class="person-form__requrided requrided">
+              <button class="button person-form__button-submit" type="submit">Отправить отзыв</button>
+              <p class="requrided__field">*-Обязательные поля</p>
+            </div>
           </div>
         </form>
       </section>

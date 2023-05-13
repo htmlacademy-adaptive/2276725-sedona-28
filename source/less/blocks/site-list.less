@@ -1,0 +1,42 @@
+.site-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #81b3d2;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 19.92% 19.92% 1fr 19.92% 19.92%;
+    background-color: #ffffff;
+  }
+}
+
+.site-list__item {
+  padding: 17px 0 12px;
+  // margin: 0 20px;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    // width: 153px;
+  }
+}
+
+.site-list__item:nth-child(4n+3) {
+  grid-column-start: 4;
+}
+
+.link__item {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+    color: #000000;
+  }
+  // @media (min-width: 768px) {
+  //   background-color: #ffffff;
+  //   color: #000000;
+  // }
+}
