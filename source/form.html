@@ -11,7 +11,7 @@
       <a class="main-header__logo">
         <img class="main-header__logo-image" src="img/header-logo.svg" width="185" height="96" alt="Логотип сайта о Седоне.">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toogle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -35,7 +35,6 @@
     </header>
     <main class="main-inner">
       <div class="main-inner__promo inner-promo">
-        <img class="inner-promo__image" src="img/promo-background-mobile-catalog.jpg" alt="Вид на горы.">
         <img class="inner-promo__welcome" src="img/welcome-mobile-catalog.svg" alt="Sedona.">
       </div>
       <header class="form-header">
@@ -66,12 +65,22 @@
               <label class="person-info__field form-field">
                 <span class="form-field__label">Контактный телефон*:</span>
                 <input class="form-field__control input" type="number" name="person-telephone" id="person-telephone" placeholder="Введите телефон" required>
-                <img class="phone-icon" src="../source/img/phone-icon.jpg" width="58" height="58" alt="Иконка телефона.">
+                <button class="button form-field__button" type="button">
+                  <svg class="phone-icon" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="58" height="58" fill="#E6E6E6"/>
+                    <path d="M23.6 27.8C25 30.6 27.4 32.9 30.2 34.4L32.4 32.2C32.7 31.9 33.1 31.8 33.4 32C34.5 32.4 35.7 32.6 37 32.6C37.6 32.6 38 33 38 33.6V37C38 37.6 37.6 38 37 38C27.6 38 20 30.4 20 21C20 20.4 20.4 20 21 20H24.5C25.1 20 25.5 20.4 25.5 21C25.5 22.2 25.7 23.4 26.1 24.6C26.2 24.9 26.1 25.3 25.9 25.6L23.6 27.8Z" fill="#010101"/>
+                    </svg>
+                </button>
               </label>
               <label class="person-info__field form-field">
                 <span class="form-field__label">Электронная почта*:</span>
                 <input class="form-field__control input" type="email" name="person-email" id="person-email" placeholder="Введите e-mail" required>
-                <img class="phone-icon" src="../source/img/email-icon.jpg" width="58" height="58" alt="Иконка телефона.">
+                <button class="button form-field__button" type="button">
+                  <svg class="phone-icon" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="58" height="58" fill="#E6E6E6"/>
+                    <path d="M29 31C28.7 31 28.5 30.9 28 30.7L21 27V34C21 34.5 21.5 35 22 35H36C36.5 35 37 34.5 37 34V27L30 30.7C29.5 30.9 29.3 31 29 31ZM36 23H22C21.5 23 21 23.5 21 24V24.8L29 29L37 24.8V24C37 23.5 36.5 23 36 23Z" fill="black"/>
+                    </svg>
+                </button>
               </label>
             </div>
         </section>
@@ -95,62 +104,72 @@
               </label>
             </ul>
           </div>
-          <legend class="person-form__title person-form__visited visited">Посещенные достопримечательности:</legend>
-          <ul class="visited__list">
-            <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="visited-item" value="Мост дьявола" checked>
-              <span class="control__mark"></span>
-              <span class="control__label">Мост дьявола</span>
-            </label>
-            <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="visited-item" value="Гора-Колокол" checked>
-              <span class="control__mark"></span>
-              <span class="control__label">Гора-Колокол</span>
-            </label>
-            <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="visited-item" value="Слайд-парк" checked>
-              <span class="control__mark"></span>
-              <span class="control__label">Слайд-парк</span>
-            </label>
-            <label class="control">
-              <input class="visually-hidden control-input" type="checkbox" name="visited-item" value="Красные скалы">
-              <span class="control__mark"></span>
-              <span class="control__label">Красные скалы</span>
-            </label>
-          </ul>
-          <div class="person-form__description">
-            <legend class="person-form__title description">Опишите свои эмоции:</legend>
-            <input class="description__text" type="text" placeholder="Опишите подробно все свои восторги">
-            <div class="person-form__requrided requrided">
-              <button class="button person-form__button-submit" type="submit">Отправить отзыв</button>
-              <p class="requrided__field">*-Обязательные поля</p>
-            </div>
+          <div class="person-form__visited">
+            <legend class="person-form__title visited">Посещенные достопримечательности:</legend>
+            <ul class="visited__list">
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="visited-item" value="Мост дьявола" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Мост дьявола</span>
+              </label>
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="visited-item" value="Гора-Колокол" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Гора-Колокол</span>
+              </label>
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="visited-item" value="Слайд-парк" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Слайд-парк</span>
+              </label>
+              <label class="control">
+                <input class="visually-hidden control-input" type="checkbox" name="visited-item" value="Красные скалы">
+                <span class="control__mark"></span>
+                <span class="control__label">Красные скалы</span>
+              </label>
+            </ul>
+        </div>
+          <legend class="person-form__title description">Опишите свои эмоции:</legend>
+          <textarea class="description__text" type="text" placeholder="Опишите подробно все свои восторги"></textarea>
+          <div class="person-form__requrided requrided">
+            <button class="button person-form__button-submit" type="submit">Отправить отзыв</button>
+            <p class="requrided__field">*-Обязательные поля</p>
           </div>
-        </form>
+          </form>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__contacts contacts">
-          <a class="contacts__text" href="#">#visitsedona</a>
-        </div>
-        <div class="main-footer__social social">
-          <a class="social__vkontakte" href="https://vk.com/htmlacademy">
-            <span class="visually">Вконтакте</span>
-          </a>
-          <a class="social__telegram" href="https://t.me/htmlacademy">
-            <span class="visually">Телеграм</span>
-          </a>
-          <a class="social__youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually">YouTube</span>
-          </a>
-        </div>
-        <div class="main-footer__copyyright copyyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="copyright__image" src="img/html_academy-logo.jpg" alt="Логотип HTML Академии">
-          </a>
-        </div>
+      <div class="main-footer__contacts contacts">
+        <a class="contacts__text" href="#">#visitsedona</a>
+      </div>
+      <div class="main-footer__social social">
+        <a class="social__button" href="https://vk.com/htmlacademy">
+          <svg class="social-icon" aria-hidden="true" focusable="false"  width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z" fill="currentColor"/>
+          </svg>
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+        <a class="social__button" href="https://t.me/htmlacademy">
+          <svg class="social-icon" aria-hidden="true" focusable="false"  width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.4393 1.62225L18.2705 16.566C18.0313 17.6205 17.408 17.883 16.5223 17.3865L11.6938 13.8285L9.36427 16.0695C9.10627 16.3275 8.89102 16.5428 8.39377 16.5428L8.74102 11.6258L17.6893 3.54C18.0785 3.1935 17.6045 3.00075 17.0848 3.348L6.02227 10.314L1.25977 8.823C0.224021 8.49975 0.205271 7.78725 1.47577 7.29L20.1035 0.113253C20.966 -0.209997 21.7205 0.305253 21.4393 1.623V1.62225Z" fill="currentColor"/>
+          </svg>
+          <span class="visually-hidden">Телеграм</span>
+        </a>
+        <a class="social__button" href="https://www.youtube.com/user/htmlacademyru">
+          <svg class="social-icon" aria-hidden="true" focusable="false" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.1813 0H2.81331C1.30618 0 0 1.3 0 2.8V11.1C0 12.7 1.30618 14 2.81331 14H17.1813C18.7889 14 19.9946 12.7 19.9946 11.2V2.8C20.095 1.3 18.7889 0 17.1813 0ZM7.03326 10.4V3.6L13.8656 7L7.03326 10.4Z" fill="currentColor"/>
+          </svg>
+          <span class="visually-hidden">YouTube</span>
+        </a>
+      </div>
+      <div class="main-footer__copyyright copyyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg  class="copyright__image" aria-hidden="true" focusable="false" width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.1506 0.25H14.0502L0.5 1.58944V25.221L14.0502 32.875L27.5 25.221V1.58944L14.1506 0.25ZM25.5929 11.8266L14.0502 5.32075V5.22507H13.9498L13.8494 5.1294V5.22507L2.40706 11.8266V3.21591L13.9498 2.06782L25.5929 3.21591V11.8266ZM13.9498 6.75587L25.4926 13.1661L20.9758 15.6536L13.8494 11.6353V12.9747L19.7714 16.3233L18.868 16.8017L13.8494 13.9315V15.2709L17.6636 17.4714L16.8606 17.9498L13.8494 16.2276V17.5671L15.7565 18.6195L13.9498 19.6719L2.50743 13.2617L13.9498 6.75587ZM2.40706 14.6968L13.8494 21.2027V22.1595L5.92007 17.6628V19.0022L13.9498 23.5946V24.647L5.92007 20.1503V21.4897L13.9498 26.0821L22.0799 21.3941V16.419L25.4926 14.5055V24.0729L13.9498 30.6745L2.40706 24.1686V14.6968Z" fill="currentColor"/>
+          </svg>
+          <span class="visually-hidden">Логотип HTML Академии</span>
+        </a>
       </div>
     </footer>
     <div class="modal">

@@ -1,7 +1,127 @@
 .main-nav {
-  @media (min-width: 768px) {
-    // position: absolute;
-    // left: calc(50% - 768px / 2);
+  position: relative;
+  width: auto;
+  min-height: 55px;
+}
+
+.main-nav__toogle {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 66px;
+  height: 54px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.main-nav__toogle:hover {
+  background-color: transparent;
+}
+
+.main-nav--closed .main-nav__toogle::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 24px;
+  width: 23px;
+  height: 4px;
+  background-color: #81b3d2;
+  box-shadow: 0 5px 0 0 #81b3d2, 0 10px 0 0 #81b3d2;
+}
+
+.main-nav--closed .main-nav__toogle:hover::before {
+  background-color: fade(#81b3d2, 60%);
+  box-shadow: 0 5px 0 0 fade(#81b3d2, 60%), 0 10px 0 0 fade(#81b3d2, 60%);
+}
+
+.main-nav--closed .main-nav__toogle:active::before {
+  background-color: fade(#81b3d2, 30%);
+  box-shadow: 0 5px 0 0 fade(#81b3d2, 30%), 0 10px 0 0 fade(#81b3d2, 30%);
+}
+
+@media (max-width: 767px) {
+  .main-nav--opened .main-nav__wrapper::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    height: 7px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  }
+
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  // .main-nav--opened .site-list__item--curent a {
+  //   display: none;
+  // }
+
+  .main-nav--opened .main-header__logo {
+    display: none;
+  }
+
+  &--current {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__toogle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
+}
+
+// .main-nav--opened .main-header__logo {
+//   display: none;
+// }
+
+// .main-nav--nojs {
+//   display: none;
+// }
+
+.main-nav--opened .main-nav__toogle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    width: 28px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: fade(#ffffff, 60%);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
   }
 }
 
