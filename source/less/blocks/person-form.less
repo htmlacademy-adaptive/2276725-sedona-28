@@ -4,6 +4,9 @@
   padding: 24px 20px 0 20px;
 
   @media (min-width: 768px) {
+
+    padding: 0 60px 64px;
+
     .person-info {
       display: grid;
       grid-template-columns: 295px 295px;
@@ -25,6 +28,10 @@
   }
 }
 
+.person__name {
+  margin: 0 0 64px;
+}
+
 .person-form__title {
   font-weight: 700;
   font-size: 18px;
@@ -36,6 +43,8 @@
 
   @media (min-width: 768px) {
     font-size: 21px;
+    max-width: 308px;
+    margin: 0 auto 28px;
   }
 }
 
@@ -49,8 +58,12 @@
 }
 
 .person-form__visited {
+  margin: 0 0 49px;
+
   @media (min-width: 768px) {
-    max-width: 308px;
+    display: grid;
+    justify-content: center;
+    // max-width: 308px;
     margin: 0 auto;
     padding: 0 0 28px 0;
   }
@@ -70,7 +83,8 @@
     grid-column-gap: 32px;
     grid-template-rows: 46px 46px;
     grid-row-gap: 16px;
-    justify-items: center;
+    // justify-items: center;
+    padding: 0;
   }
 
   @media (min-width: 1200px) {
@@ -104,6 +118,17 @@
   display: flex;
   flex-direction: column;
   align-items: baseline;
+  position: relative;
+}
+
+.form-field__button {
+  background-color: transparent;
+  position: absolute;
+  bottom: 16px;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  padding: 0;
 }
 
 .form-field__label {
@@ -122,11 +147,12 @@
   color: #000000;
   margin: 0 0 16px 0;
   padding: 16px;
-  width: 430px;
+  width: 280px;
   box-sizing: border-box;
+  border: none;
 
-  @media (min-width: 768px) {
-    width: 280px;
+  @media (min-width: 1200px) {
+    width: 430px;
   }
 }
 
@@ -170,23 +196,25 @@
 }
 
 .description__text {
-  min-height: 150px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: rgba(0, 0, 0, 0.3);
   background-color: #f2f2f2;
   margin: 0 0 56px 0;
   padding: 16px;
-  text-align: start;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 150px;
 }
 
 .person-form__contacts {
   padding: 24px 0 34px;
+  margin: 0 0 59px;
 }
 
 .person-form__review {
-  padding: 24px 0 34px;
+  margin: 0 0 49px;
+  // padding: 24px 0 34px;
 }
 
 .person-form__button-submit {
@@ -199,6 +227,8 @@
 }
 
 .person-form__requrided {
+  display: grid;
+
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -211,6 +241,7 @@
   font-size: 12px;
   line-height: 21px;
   margin: 0;
+  justify-self: end;
 
   @media (min-width: 768px) {
     justify-self: end;
