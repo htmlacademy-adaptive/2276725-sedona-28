@@ -3,10 +3,17 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
+}
+
+.booking__wrapper {
   padding: 38px 18px 49px;
 
   @media (min-width: 768px) {
-    padding: 60px 155px 55px;
+    padding: 60px 138px 55px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 60px 354px 66px;
   }
 }
 
@@ -31,7 +38,11 @@
   line-height: 21px;
   color: #333333;
   margin: 0 0 32px;
-  padding: 0 11px;
+  // padding: 0 11px;
+
+  br {
+    display: none;
+  }
 
   @media (min-width: 768px) {
     font-size: 14px;
@@ -39,6 +50,10 @@
     max-width: 435px;
     margin: 0 auto;
     margin-bottom: 44px;
+
+    br {
+      display: block;
+    }
   }
 }
 

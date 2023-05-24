@@ -3,7 +3,6 @@
   font-family: "PT Sans", sans-serif;
   background-color: #ffffff;
   margin: 0;
-  // padding: 0;
 
   @media (min-width: 768px) {
     .recomendation-list__item {
@@ -15,7 +14,7 @@
 
   @media (min-width: 1200px) {
     .recomendation-list__item {
-      padding: 169px 50px 69px 50px;
+      padding: 169px 50px 69px;
       box-sizing: border-box;
     }
 
@@ -26,46 +25,78 @@
   }
 }
 
-// ..recomendation-list__item {
-//   font-family: "PT Sans", sans-serif;
-// }
+.recomendation-list__item {
+  position: relative;
+}
+
+.recomendation-list__item:last-child {
+  br {
+    display: none;
+  }
+}
+
+.recomendation-list__item:not(:last-child) {
+  margin: 0 0 25px 0;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+}
 
 .recomendation-list__item--house__image {
   position: absolute;
-  top: 13px;
-  left: 18px;
+  top: -11px;
+  left: -50px;
 
   @media (min-width: 768px) {
     width: 77px;
     height: 72px;
-    top: 60px;
-    left: 84px;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: 1200px) {
+    width: 80px;
+    height: 72px;
   }
 }
 
 .recomendation-list__item--food__image {
   position: absolute;
-  top: 144px;
-  left: 18px;
+  top: -11px;
+  left: -50px;
 
   @media (min-width: 768px) {
     width: 80px;
     height: 68px;
-    top: 60px;
-    left: 84px;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: 1200px) {
+    width: 80px;
+    height: 72px;
   }
 }
 
 .recomendation-list__item--gift__image {
   position: absolute;
-  top: 252px;
-  left: 18px;
+  top: -11px;
+  left: -50px;
 
   @media (min-width: 768px) {
     width: 67px;
     height: 75px;
-    top: 60px;
-    left: 88px;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: 1200px) {
+    width: 80px;
+    height: 72px;
   }
 }
 
@@ -88,12 +119,6 @@
   }
 }
 
-@media (max-width: 768px) {
-  .recomendation-list__item:not(:last-child) {
-    margin: 0 0 25px;
-  }
-}
-
 .recomendation-list__discription {
   font-weight: 400;
   font-size: 14px;
@@ -102,10 +127,18 @@
   padding: 0;
   margin: 0;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: 768px) {
     margin: 0 auto;
     font-size: 14px;
     line-height: 21px;
+
+    br:not(:nth-child(2)) {
+      display: block;
+    }
   }
 
   @media (min-width: 1200px) {

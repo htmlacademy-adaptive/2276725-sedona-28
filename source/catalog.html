@@ -8,10 +8,10 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="img/header-logo.svg" width="185" height="96" alt="Логотип сайта о Седоне.">
-      </a>
       <nav class="main-nav main-nav--closed">
+        <a class="main-header__logo">
+          <img class="main-header__logo-image" src="img/header-logo.svg" width="185" height="96" alt="Логотип сайта о Седоне.">
+        </a>
         <button class="main-nav__toogle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -46,7 +46,11 @@
         <h2 class="visually-hidden">Лента фотографий</h2>
         <ul class="photo__list snapshot publication">
           <li class="snapshot__item publication__first">
-            <img class="publication__content" src="img/content-photo-1-mobile.jpg" width="280" height="280" alt="Дорога, уходящая вдаль.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/content/content-photo-1-desktop.jpg 1x, img/content/content-photo-1-desktop_2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/content/content-photo-1-tablet.jpg 1x, img/content/content-photo-1-tablet_2x.jpg 2x">
+              <img class="publication__content" src="img/content/content-photo-1-mobile.jpg" width="280" height="280" alt="Дорога, уходящая вдаль.">
+            </picture>
             <div class="publication__first-wrapper">
               <div class="snapshot__discription">
                 <h3 class="publication__discription">Неродные просторы</h3>
@@ -54,14 +58,20 @@
               </div>
               <div class="publication__favorite">
                 <button class="button publication-button__favorite" type="button">
-                  <img class="publication-button__favorite-image" src="img/like-icon.svg" alt="Поставить лайк публикации">
+                  <svg class="publication-button__favorite-image" width="23" height="21" viewBox="0 0 23 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentColor"/>
+                  </svg>
                 </button>
                 <p class="publication__num-favorites">1350</p>
               </div>
             </div>
           </li>
           <li class="snapshot__item publication__second">
-            <img class="publication__content" src="img/content-photo-2-mobile.jpg" width="280" height="280" alt="Местное растение.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/content/content-photo-2-desktop.jpg 1x, img/content/content-photo-2-desktop_2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/content/content-photo-2-tablet.jpg 1x, img/content/content-photo-2-tablet_2x.jpg 2x">
+            <img class="publication__content" src="img/content/content-photo-2-mobile.jpg" width="280" height="280" alt="Местное растение.">
+            </picture>
             <div class="publication__wrapper">
               <div class="snapshot__discription">
                 <h3 class="publication__discription">Местная растительность</h3>
@@ -69,14 +79,20 @@
               </div>
               <div class="publication__favorite">
                 <button class="button publication-button__favorite" type="button">
-                  <img class="publication-button__favorite-image" src="img/like-icon.svg" alt="Поставить лайк публикации">
+                  <svg class="publication-button__favorite-image" width="23" height="21" viewBox="0 0 23 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentColor"/>
+                  </svg>
                 </button>
                 <p class="publication__num-favorites">143</p>
               </div>
             </div>
           </li>
           <li class="snapshot__item publication__third">
-            <img class="publication__content" src="img/content-photo-3-mobile.jpg" width="280" height="280" alt="Серпантин.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/content/content-photo-3-desktop.jpg 1x, img/content/content-photo-3-desktop_2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/content/content-photo-3-tablet.jpg 1x, img/content/content-photo-3-tablet_2x.jpg 2x">
+            <img class="publication__content" src="img/content/content-photo-3-mobile.jpg" width="280" height="280" alt="Серпантин.">
+            </picture>
             <div class="publication__wrapper">
               <div class="snapshot__discription">
                 <h3 class="publication__discription">Дорога на север</h3>
@@ -84,14 +100,20 @@
               </div>
               <div class="publication__favorite">
                 <button class="button publication-button__favorite" type="button">
-                  <img class="publication-button__favorite-image" src="img/like-icon.svg" alt="Поставить лайк публикации">
+                  <svg class="publication-button__favorite-image" width="23" height="21" viewBox="0 0 23 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentColor"/>
+                  </svg>
                 </button>
                 <p class="publication__num-favorites">96</p>
               </div>
             </div>
           </li>
           <li class="snapshot__item publication__fourth">
-            <img class="publication__content" src="img/content-photo-4-mobile.jpg" width="280" height="280" alt="Вид на мост дьявола.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/content/content-photo-4-desktop.jpg 1x, img/content/content-photo-4-desktop_2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/content/content-photo-4-tablet.jpg 1x, img/content/content-photo-4-tablet_2x.jpg 2x">
+            <img class="publication__content" src="img/content/content-photo-4-mobile.jpg" width="280" height="280" alt="Вид на мост дьявола.">
+            </picture>
             <div class="publication__wrapper">
               <div class="snapshot__discription">
                 <h3 class="publication__discription">Мост дьявола</h3>
@@ -99,7 +121,9 @@
               </div>
               <div class="publication__favorite">
                 <button class="button publication-button__favorite" type="button">
-                  <img class="publication-button__favorite-image" src="img/like-icon.svg" alt="Поставить лайк публикации">
+                  <svg class="publication-button__favorite-image" width="23" height="21" viewBox="0 0 23 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="currentColor"/>
+                  </svg>
                 </button>
                 <p class="publication__num-favorites">254</p>
               </div>
@@ -109,8 +133,10 @@
       </section>
       <section class="video">
         <h2 class="visually-hidden">Видео из Седоны</h2>
-        <h2 class="video__promo">Все еще сомневаетесь?</h2>
-        <p class="video__advertising">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <div class="video__promo-wrapper promo">
+          <h2 class="promo__title">Все еще сомневаетесь?</h2>
+          <p class="promo__advertising">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
         <img class="video__content" src="img/video-mobile.jpg" width="280" height="177" alt="Видео Седоны.">
       </section>
     </main>
