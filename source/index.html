@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
+    <!-- <link rel="icon" href="favicon.ico"> -->
   </head>
   <body class="page__body">
     <header class="main-header">
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--closed">
         <a class="main-header__logo">
           <img class="main-header__logo-image" src="img/header-logo.svg" width="185" height="96" alt="Логотип сайта о Седоне.">
         </a>
@@ -37,7 +38,6 @@
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <div class="main-container__promo promo">
         <img class="promo__welcome" src="img/welcome.png" width="282" height="214" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
-        <img class="promo-frame" src="img/promo-frame-mobile.png" width="768" height="518" alt="Оформление главной картинки">
       </div>
       <section class="announcement">
         <h2 class="visually-hidden">Седона и ее преимущества</h2>
@@ -47,12 +47,12 @@
         </div>
         <ol class="advantages-list quality-list">
           <li class="advantages-list__item advantages-list__item--first">
-            <div class="advantages-list__product-container product-container">
+            <div class="advantages-list__product-container advantages-list__product-container-first product-container">
               <h3 class="product-container__title">Настоящий городок</h3>
-              <p class="product-container__number">-№1-</p>
-              <p class="product-container__discription">Седона не аттракцион для туристов,<br>там течёт своя жизнь</p>
+              <p class="product-container__number">№1</p>
+              <p class="product-container__discription">Седона не аттракцион для туристов,<br> там течёт своя жизнь</p>
             </div>
-            <img class="advantages-list__product-image-first product-image" src="img/photo-1-mobile.jpg" width="320" height="260" alt="Изображение дома.">
+            <img class="advantages-list__product-image-first product-image" src="img/content/main-page-photo-1-mobile.jpg" width="320" height="260" alt="Изображение дома.">
           </li>
           <ul class="advantages-list__recomendation recomendation-list">
             <li class="recomendation-list__item recomendation-list__item--house">
@@ -70,7 +70,7 @@
                 <path d="M30.6769 25.6975H29.1106V27.6815H30.6769V25.6975Z" fill="#81B3D2"/>
               </svg>
               <h3 class="recomendation-list__title">Жильё</h3>
-              <p class="recomendation-list__discription">Рекомендуем пожить в<br>настоящем мотеле, всё как в<br>кино!</p>
+              <p class="recomendation-list__discription">Рекомендуем пожить в<br> настоящем мотеле, всё как в<br> кино!</p>
             </li>
             <li class="recomendation-list__item recomendation-list__item--food">
               <svg class="recomendation-list__item--food__image" aria-hidden="true" focusable="false" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,39 +82,39 @@
                 <path d="M24.1995 8.67871C24.7793 8.67871 25.2493 8.22515 25.2493 7.66565C25.2493 7.10615 24.7793 6.65259 24.1995 6.65259C23.6196 6.65259 23.1496 7.10615 23.1496 7.66565C23.1496 8.22515 23.6196 8.67871 24.1995 8.67871Z" fill="#81B3D2"/>
               </svg>
               <h3 class="recomendation-list__title">Еда</h3>
-              <p class="recomendation-list__discription">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <p class="recomendation-list__discription">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
             </li>
             <li class="recomendation-list__item recomendation-list__item--gift">
               <svg class="recomendation-list__item--gift__image" aria-hidden="true" focusable="false" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M34.5778 12.2058H34.527H22.1841C29.0921 8.76156 29.6508 6.58358 29.3968 5.36796C28.8381 3.39259 26.5524 1.87307 24.419 2.68348C21.6254 3.74714 20.8635 7.9005 20.1016 10.8889C19.1365 7.84985 18.2222 4.0004 16.0381 2.02502C15.4286 1.46786 14.5143 0.910706 13.1429 1.01201C11.1111 1.21461 8.21587 3.69649 9.43492 6.48228C10.5524 9.16676 14.2603 10.8889 16.7492 12.2565H5.42222C4.60952 12.2565 4 12.9149 4 13.6747V19.3475C4 20.158 4.66032 20.7658 5.42222 20.7658H5.5746V39H34.527V20.7658H34.5778C35.3905 20.7658 36 20.1073 36 19.3475V13.6747C36 12.8643 35.3397 12.2058 34.5778 12.2058ZM25.2317 3.94975C26.2984 3.79779 27.7206 4.6082 27.873 5.57057C28.0762 6.93813 26.1968 8.2044 25.3333 8.76156C24.0635 9.62262 22.8444 10.0785 21.6762 10.7876C22.0825 8.91351 22.946 4.25365 25.2317 3.94975ZM13.7524 8.91351C12.6349 8.15375 10.5016 6.68488 10.5524 5.01341C10.6032 3.18999 13.4476 1.72112 14.9714 3.08868C16.9016 4.76016 17.8159 8.66026 18.527 11.3954C16.9016 10.585 15.3778 9.97717 13.7524 8.91351ZM16.7492 37.4805H7.04762V20.7658H16.7492V37.4805ZM16.7492 19.2462H5.52381V13.7253H16.7492V19.2462ZM21.8286 37.4805H18.2222V13.7253H21.8286V37.4805ZM33.0032 37.4805H23.3524V20.7658H33.054V37.4805H33.0032ZM34.4762 19.2462H23.3524V13.7253H34.4762V19.2462Z" fill="#81B3D2"/>
               </svg>
               <h3 class="recomendation-list__title">Сувениры</h3>
-              <p class="recomendation-list__discription">Не только китайского, но и местного производства!</p>
+              <p class="recomendation-list__discription">Не только китайского,<br> но и местного производства!</p>
             </li>
           </ul>
           <li class="advantages-list__item advantages-list__item--second">
             <div class="advantages-list__product-container product-container">
               <h3 class="product-container__title">Там есть мост дьявола</h3>
-              <p class="product-container__number">-№2-</p>
+              <p class="product-container__number">№2</p>
               <p class="product-container__discription">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="advantages-list__product-image-second product-image" src="img/photo-2-mobile.jpg" width="320" height="260" alt="Вид на мост дьявола.">
+            <img class="advantages-list__product-image-second product-image" src="img/content/main-page-photo-2-mobile.jpg" width="320" height="260" alt="Вид на мост дьявола.">
           </li>
           <ul class="quality-list__item quality">
             <li class="quality__item list-item">
               <h3 class="list-item__title">Небольшая площадь</h3>
-              <p class="list-item__number">-№3-</p>
-              <p class="list-item__discription">Все интересные места находятся<br>очень близко</p>
+              <p class="list-item__number">№3</p>
+              <p class="list-item__discription">Все интересные места находятся<br> очень близко</p>
             </li>
-            <li class="quality__item__item list-item">
+            <li class="quality__item list-item">
               <h3 class="list-item__title">Красивая дорога</h3>
-              <p class="list-item__number">-№4-</p>
-              <p class="list-item__discription">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+              <p class="list-item__number">№4</p>
+              <p class="list-item__discription">Ехать в Седону из Лас-Вегаса<br> совсем не скучно!</p>
             </li>
-            <li class="quality__item__item list-item">
+            <li class="quality__item list-item">
               <h3 class="list-item__title">Мало туристов</h3>
-              <p class="list-item__number">-№5-</p>
-              <p class="list-item__discription">Большинство едет в Гранд Каньон<br>и толпится там</p>
+              <p class="list-item__number">№5</p>
+              <p class="list-item__discription">Большинство едет в Гранд Каньон<br> и толпится там</p>
             </li>
           </ul>
         </ol>
@@ -123,13 +123,13 @@
         <h2 class="visually-hidden">Бронирование гостиницы</h2>
         <div class="booking__wrapper reservation">
           <h3 class="reservation__title">Заинтересовались?</h3>
-          <p class="reservation__discription">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p class="reservation__discription">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="button booking__button-submit">Найти гостиницу</button>
         </div>
       </section>
       <section class="map-location">
         <h2 class="visually-hidden">Расположение Седоны на карте Аризоны</h2>
-        <iframe class="map-location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2648915.4207623466!2d-112.24170848011819!3d35.22629705521065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1684404561091!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map-location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2648915.4207623466!2d-112.24170848011819!3d35.22629705521065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1684404561091!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
     <footer class="main-footer">
@@ -166,6 +166,6 @@
         </a>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

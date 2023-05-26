@@ -1,39 +1,35 @@
-.main-inner__promo {
-  background-image: url("../img/promo-background.jpg");
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 214px;
-  background-color: #81b3d2;
-  position: relative;
-  background-position: 49% 99%;
-}
-
-
 .inner-promo__welcome {
-  padding: 52px 0 0;
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-  .main-inner__promo {
-    background-repeat: no-repeat;
-    height: 297px;
-    width: 100%;
-    background-position: 49% 99%;
+.main-inner__promo {
+  position: relative;
+  background-image: url("../img/promo-frame.png"), url("../img/content/promo-background.jpg");
+  background-repeat: no-repeat;
+  padding: 52px 67px;
+  background-size: auto, 260% 240%;
+  background-position: bottom;
+
+  @media (min-width: 768px) {
+    padding: 95px 117px;
+    background-size: 160%, 150% 170%;
+
+    .inner-promo__welcome {
+      width: 456px;
+      height: 78px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-frame.png"), url("../img/content/promo-background@2x.jpg");
+    }
   }
 
-  .inner-promo__welcome {
-    height: 78px;
-    width: 456px;
-    padding: 95px 0 0;
-  }
-}
+  @media (min-width: 1200px) {
+    padding: 101px 120px;
+    background-size: auto, 100% 160%;
 
-@media (min-width: 1200px) {
-  .inner-promo__welcome {
-    height: 80px;
-    width: 456px;
-    padding: 101px 0 0;
-    margin: 0 auto;
+    .inner-promo__welcome {
+      width: 460px;
+    }
   }
 }

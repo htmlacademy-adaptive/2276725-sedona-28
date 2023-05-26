@@ -1,17 +1,22 @@
 .video {
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
-  padding: 17px 0;
   align-items: center;
+}
+
+.video__promo-wrapper {
+  padding: 17px 36px 38px 28px;
 
   @media (min-width: 768px) {
-    padding: 58px 0 66px;
-    margin: 0 auto;
-    max-width: 445px;
+    padding: 0 120px 66px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 66px 338px 68px;
   }
 }
 
-.video__promo {
+.promo__title {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -24,11 +29,13 @@
   }
 }
 
-.video__advertising {
+.promo__advertising {
   font-weight: 400;
   font-size: 15px;
   line-height: 21px;
   color: #333333;
-  margin: 0 0 38px 0;
-  padding: 0 38px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
 }

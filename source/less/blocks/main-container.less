@@ -3,21 +3,26 @@
 }
 
 .main-container__promo {
-  background-image: url("../img/promo-background.jpg");
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 389px;
+  padding: 90px 0 85px;
   background-color: #81b3d2;
   position: relative;
-  background-position: 52% -38px;
-}
+  background-image: url("../img/promo-frame.png"), url("../img/content/promo-background.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%, 50% 25%;
+  background-size: 170%, 280%;
 
-.promo__welcome {
-  height: 214px;
-  width: 282px;
-  bottom: 22%;
-  left: 10%;
-  padding: 90px 0 0;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-frame.png"), url("../img/content/promo-background@2x.jpg");
+  }
+
+  @media (min-width: 768px) {
+    padding: 78px 0 90px;
+    background-size: 156%, 156%;
+  }
+
+  @media (min-width: 1200px) {
+    background-size: 100%, 100%;
+  }
 }
 
 .promo-frame {
@@ -25,28 +30,4 @@
   width: 100%;
   bottom: 0;
   left: 0;
-}
-
-@media (min-width: 768px) {
-  .main-container__promo {
-    background-image: url("../img/promo-background.jpg");
-    background-repeat: no-repeat;
-    height: 518px;
-    background-position: 50% 10%;
-  }
-
-  .promo__welcome {
-    height: 350px;
-    width: 461px;
-    padding: 77px 0 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .promo__welcome {
-    height: 350px;
-    width: 460px;
-    bottom: 18%;
-    left: 31%;
-  }
 }
